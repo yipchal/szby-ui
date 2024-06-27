@@ -4,22 +4,41 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "npm run build:js && npm run build:css",
+    "lint": "vue-cli-service lint",
+    "build:js": "webpack --config ./webpack.component.js",
+    "build:css": "npx gulp sass",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {
+    "@vue/cli-service": "^4.5.15",
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "css-loader": "^3.6.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "progress-webpack-plugin": "^1.0.0",
+    "sass": "^1.77.6",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^1.3.0",
+    "vue": "^2.6.14",
+    "vue-loader": "^15.9.8",
+    "webpack": "^4.47.0",
+    "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
+    "cache-loader": "^4.1.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "vue-template-compiler": "^2.6.14"
+    "gulp": "^5.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^5.1.0",
+    "vue-template-compiler": "^2.6.14",
+    "vuepress": "^1.9.10"
   },
   "eslintConfig": {
     "root": true,
