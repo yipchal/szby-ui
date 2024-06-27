@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>快速开始 | szby-ui</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="深圳百应UI库">
+    
+    <link rel="preload" href="/szby-ui/assets/css/0.styles.eed1448b.css" as="style"><link rel="preload" href="/szby-ui/assets/js/app.a58e8dc4.js" as="script"><link rel="preload" href="/szby-ui/assets/js/2.ed34fdc1.js" as="script"><link rel="preload" href="/szby-ui/assets/js/1.a8bc32b1.js" as="script"><link rel="preload" href="/szby-ui/assets/js/23.a06a81f5.js" as="script"><link rel="prefetch" href="/szby-ui/assets/js/10.930e8c92.js"><link rel="prefetch" href="/szby-ui/assets/js/11.ae7d891b.js"><link rel="prefetch" href="/szby-ui/assets/js/12.730d6d54.js"><link rel="prefetch" href="/szby-ui/assets/js/13.e0070a2d.js"><link rel="prefetch" href="/szby-ui/assets/js/14.4b7aedef.js"><link rel="prefetch" href="/szby-ui/assets/js/15.5b792c21.js"><link rel="prefetch" href="/szby-ui/assets/js/16.9d07d5fb.js"><link rel="prefetch" href="/szby-ui/assets/js/17.0df38bda.js"><link rel="prefetch" href="/szby-ui/assets/js/18.49e02bf7.js"><link rel="prefetch" href="/szby-ui/assets/js/19.f814ba6b.js"><link rel="prefetch" href="/szby-ui/assets/js/20.0a10df44.js"><link rel="prefetch" href="/szby-ui/assets/js/21.0e2b1c2a.js"><link rel="prefetch" href="/szby-ui/assets/js/22.b9ed3f6f.js"><link rel="prefetch" href="/szby-ui/assets/js/24.898f9eab.js"><link rel="prefetch" href="/szby-ui/assets/js/3.3e5ce078.js"><link rel="prefetch" href="/szby-ui/assets/js/4.24f0c38f.js"><link rel="prefetch" href="/szby-ui/assets/js/5.f764773c.js"><link rel="prefetch" href="/szby-ui/assets/js/6.7396a3cf.js"><link rel="prefetch" href="/szby-ui/assets/js/7.e9cf1dcf.js"><link rel="prefetch" href="/szby-ui/assets/js/vendors~docsearch.5a4296f1.js">
+    <link rel="stylesheet" href="/szby-ui/assets/css/0.styles.eed1448b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/szby-ui/" aria-current="page" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">szby-ui</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/szby-ui/" aria-current="page" class="active sidebar-link">快速开始</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/szby-ui/componentsDocs/card.html" class="sidebar-link">card</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="快速开始"><a href="#快速开始" class="header-anchor">#</a> 快速开始</h1> <h3 id="安装组件库"><a href="#安装组件库" class="header-anchor">#</a> 安装组件库</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> i szby-ui
+</code></pre></div><h3 id="引用组件库"><a href="#引用组件库" class="header-anchor">#</a> 引用组件库</h3> <blockquote><p>在 main.js 中引用组件库</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 全局引入</span>
+<span class="token keyword">import</span> <span class="token string">'szby-ui/dist/css/index.css'</span>
+<span class="token keyword">import</span> <span class="token constant">SZUI</span> <span class="token keyword">from</span> <span class="token string">'szby-ui'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token constant">SZUI</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 按需引入</span>
+<span class="token keyword">import</span> <span class="token string">'szby-ui/dist/css/index.css'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Demo <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'szby-ui'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Demo<span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/szby-ui/componentsDocs/card.html">
+        card
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/szby-ui/assets/js/app.a58e8dc4.js" defer></script><script src="/szby-ui/assets/js/2.ed34fdc1.js" defer></script><script src="/szby-ui/assets/js/1.a8bc32b1.js" defer></script><script src="/szby-ui/assets/js/23.a06a81f5.js" defer></script>
+  </body>
+</html>
