@@ -2,7 +2,7 @@
 卡片组件
 
 ### 示例
-<card imgSrc="/test.png" summary="组件示例" />
+<card :imgSrc="$withBase('/test.png')" summary="组件示例" />
 
 ### 代码
 ```html
