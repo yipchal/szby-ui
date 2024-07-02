@@ -1,24 +1,34 @@
-# 快速开始
+# 更新日志
 
-### 安装组件库
+<div style="max-width: 800px; padding: 0 20px; background-color: #fff; border: 1px solid #eaecef;">
 
-``` bash
-npm i szby-ui
-```
+### 0.1.0 <small>2024-06-27</small>
 
-### 引用组件库
-> 在 main.js 中引用组件库
+#### 新功能
+- **项目搭建完成**
+  - 初始化项目结构。
+  - 配置基本的开发环境和构建工具。
 
-```javascript
-// 全局引入
-import 'szby-ui/dist/css/index.css'
-import SZUI from 'szby-ui'
-Vue.use(SZUI)
 
-// 按需引入
-import 'szby-ui/dist/css/index.css'
-import { Demo } from 'szby-ui'
-Vue.use(Demo)
-```
+#### 文档更新
+- **README.md**
+  - 添加项目介绍和安装使用说明。
+  - 添加组件使用示例和属性说明。
+
+
+#### 优化
+- **构建优化**
+  - 优化了构建脚本，减少构建时间。
+  - 添加了对不同环境的配置支持。
+
+
+#### 新增组件
+- **Card 组件**
+  - 新增 `MyCard` 组件，用于展示带有图片和简要描述的卡片。
+  - 支持自定义宽度和高度。
+  - 支持自定义图片链接和描述文本。
+
+</div>
+
 
 
